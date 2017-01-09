@@ -1,0 +1,35 @@
+1. we need install node
+
+2. npm install -g typescript
+
+3. npm install -g angular-cli
+
+4. ng new yourapplication name
+
+5. ng serve it will runs our application on the port 4200
+
+6. let and var
+
+7. ng g component componentname
+
+8. check app.module.ts
+
+9. if it is not importing the component we manually add those components
+
+10. import {component} form path;
+
+11. @ngModule declartions {
+    Headercomponet
+}
+12. for accesing for creating any component it cretes 4 files 1.html 2. .ts 3. spec 4. css
+
+  .ts
+
+  component 3 things 1. selctor  2.templateurl or template 3. css
+
+13. selctor name we can call the componet in main componet
+
+14. we are creating another component for another component we need to import our first componet
+15. import {componet} from path;
+16. we can call the first componet selctor in html
+
