@@ -33,3 +33,52 @@
 15. import {componet} from path;
 16. we can call the first componet selctor in html
 
+
+
+
+ng For and routing
+
+ngFor is just like ngrepeat
+
+it loops through an array
+
+
+the declaration we are declaring by us and we are devloping the components
+
+third party moduels formsmodule, http module router module BrowserModule
+
+
+index.html we need write only one component 
+
+index.html -- app component -- Headercomponet
+
+i'm inplemneting routing 
+
+dynamically loads views
+
+in my main file in my related file 
+
+load the views after Headercomponet
+ng-views
+
+router-outlet
+
+home register login
+
+
+
+@praveen
+
+
+app.componet . header . load the dynamic views 
+
+for dynamic views we are impleting router outlet
+
+<button><a href="./home">Home</a></button>
+
+localhost:4200/home
+
+routerLink
+
+
+

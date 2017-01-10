@@ -67,5 +67,13 @@ var let
 
 
 
+Routing 
 
+for creating different views we are going for Routing 
+
+componet angular 
+
+formmodule
+httpmodule
+RouterModule
 
