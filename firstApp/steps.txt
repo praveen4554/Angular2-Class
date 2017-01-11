@@ -81,4 +81,33 @@ localhost:4200/home
 routerLink
 
 
+*ngFor -- looping through an array in html
+
+routing-- 
+
+1.ROuterMoudle -- anguar-router
+2.routermodule in our imports
+3.we are defining our rootings like RouterModule,forRoot([{path: componet}])
+
+4. we are defining where should our views load dynamically
+  <router-outlet></router-outlet>
+
+5. Headercomponet routerLink we are defing our views
+
+Two way data binding 
+
+ngModel and name 
+restrict:
+required:
+scope:
+template url
+
+praveen
+
+restrict:'E''
+required: "name"
+
+<praveen name=""></praveen>
+
+
 

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 //import { HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
 
@@ -25,11 +25,13 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     RouterModule,
+    FormsModule,
     RouterModule.forRoot([
       {path:"Home",component:HomeComponent},
       {path:"Register",component:RegisterComponent},
       {path:"Login",component:LoginComponent},
-      {path:"Products",component:ProductsComponent}
+      {path:"Products",component:ProductsComponent},
+      {path:"**",component:HeaderComponent,data:{title:"value"}}
     ])
   ],
   providers: [],

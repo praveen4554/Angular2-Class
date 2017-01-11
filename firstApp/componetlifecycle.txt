@@ -1,0 +1,44 @@
+what is the life cycle component
+
+constructor -- will be called creation of the object
+
+i have componet the componet contains 2 methods 1. admin 2.user 
+
+ngOnChanges-- angular 2 will checks the any changes i mean it will compare previous values with present values
+
+
+ngOnInit-- initialize directives any other componets call method 
+
+ngDocheck -- suppose a=10 but angular will not load a will it returns my default value as 5 ngDocheck
+
+
+ngAfterContentInit-- it will checks or this method is used for calling any external content
+
+ngAfterContentChecked--  ngDocheck
+
+
+if suppose i have componet in the componet i have define a=10; in some method i changed it to a=5;
+when any one use this component it will automatically update my a value-- ngDocheck
+
+
+in another component i am calling the first compoonent -- component and but in some case the angular 2 is not updated the calue
+in the component
+
+
+ngAfterviewInit-- 4 files 1.css 2.spec.ts 3..ts 4.html
+       in that html it is our view of the component i would to call any method or any intialization
+
+ngAfterviewChecked --ngAfterContentChecked
+
+
+ngDestroy -- it release our component
+
+
+
+
+
+
+
+
+
+
