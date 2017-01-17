@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 //import { HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
 
@@ -26,12 +26,12 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     RouterModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path:"Home",component:HomeComponent},
       {path:"Register",component:RegisterComponent},
       {path:"Login",component:LoginComponent},
-      {path:"Products",component:ProductsComponent},
-      {path:"**",component:HeaderComponent,data:{title:"value"}}
+      {path:"Products",component:ProductsComponent}
     ])
   ],
   providers: [],
