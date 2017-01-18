@@ -109,5 +109,44 @@ required: "name"
 
 <praveen name=""></praveen>
 
+browser doesn't allow nested forms
+
+
+<form>
+ <form>
+ </form>
+ <input type="submit">submit
+</form>
+
+
+
+FormModule
+
+formgroupvalidator formbuilder
+
+1. form for my registration 
+2. Forms Module in app.module.ts--this main module
+3. for form validations i need to use ReactiveFormsModule -- app.module.ts 
+4. for modules we need to write the same module in imports section of app.module.ts
+5. i need to import FormBuilder,FormGroup,Validators from angular/forms in my respective component i.e register.component 
+6. on loading i would like import the object form builder i'm giving my form builder object in the register component
+7. for my form i need name and also i need to register the name with my formgroup
+8. registerForm:formgroup
+9. in my constructor i need to add my form formbuilder group 
+  this.registerForm=rb.group({
+      'firstName':[null,Validators.required]
+    })
+10. i need to add my form name in my html like [formGroup]="registerForm"
+11. i need to remove my custom html5 validation by using novalidate
+12. i need to register my input tag with register form [formControl]="registerForm.controls['firstName']
+
+!
+
+&& we need both true
+
+|| for any thing true it return true 
+
+for that case what i need to check it is touched or not and valid input 
+
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder,FormGroup} from '@angular/forms';
+import {FormBuilder,FormGroup,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +8,11 @@ import {FormBuilder,FormGroup} from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(rb:FormBuilder) {
+    this.registerForm=rb.group({
+      'firstName':["Praveen",Validators.maxLength(2)]
+    })
+   }
 
   ngOnInit() {
   }
@@ -16,6 +20,7 @@ export class RegisterComponent implements OnInit {
   register={
 
   }
+  registerForm:FormGroup
  registerUser(){
    console.log(this.register);
  }
