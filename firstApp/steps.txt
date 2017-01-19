@@ -148,5 +148,111 @@ formgroupvalidator formbuilder
 
 for that case what i need to check it is touched or not and valid input 
 
+we have register form then we need to store the data in one service and send the dato to db
+
+view-->component-->backend
+after component --> Services the services interact with the backend
+
+Service -- if you wan't share the data or common business logic that means reusable accross the application
+
+@Injecatble .  
+
+
+Services are injectable components we can inject services in any of the components 
+
+componet or service we have simple role IDE -- import declare and export 
+
+Syntax: import {Injectable} from '@angular/core';
+
+@Injectable()
+
+export class servicename{
+
+}
+
+ng g service servicename
+
+for service
+
+1. for creating service we are using ng g service servicename
+
+2. we need to register our service in our application 
+
+3. in my app.module i need to import my service and add my service into providers
+
+4. in my register componet  i need to import my service
+
+5. i am adding or calling service at the object creation of my component i.e we need to call the service in constructor
+
+6. we are calling our method and assing the values to a variable 
+
+
+
+we are like to call json file http module rxjs -- asynchronous data streams angular 1.x promise 
+
+the promise success or failure depends on the server or net work provider the promise success or failue 
+
+
+
+AJAX-- Asychronous javascript and XMl
+
+synchoronus asychronous -- master-slave architecture 
+
+toPromise()
+
+http calls we use the observable-->
+
+1.i need to import my http module in my app.module.ts and add into imports sections
+2. i need to call the map function and promise so for that i need to import from rxjs in my app.module
+
+3. in my service i'm gng to import Http method for calling get method
+
+4. loading the object of http at the creation of my service in my constructor 
+
+
+5. http.get(url).toPromise().then((response)=> response.json()).catch((error)=>error.json());
+
+6. in our component im making the service as public 
+
+7. i can call the method by using the promise and promise will return my result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
-//import { HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
-
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
@@ -11,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import {LookupService} from './services/lookup.service';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     RouterModule,
     FormsModule,
+    HttpModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path:"Home",component:HomeComponent},
@@ -34,7 +37,7 @@ import { LoginComponent } from './login/login.component';
       {path:"Products",component:ProductsComponent}
     ])
   ],
-  providers: [],
+  providers: [LookupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
