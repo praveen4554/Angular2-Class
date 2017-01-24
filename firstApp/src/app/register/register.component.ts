@@ -13,13 +13,15 @@ export class RegisterComponent implements OnInit {
     this.registerForm=rb.group({
       'firstName':["Praveen",Validators.maxLength(2)]
     })
-    this.Countries=lookupService.getCountries();
+    //this.Countries=lookupService.getCountries();
    }
-
+  
+  Countries:Array<any>;
   ngOnInit() {
-    this.lookupService.getCountriesfromAPi().then(response=>console.log(response));
+    this.lookupService.getCountriesfromAPi().then(response=>{
+      this.Countries=response.countries;
+    console.log(this.Countries)});
   }
-  Countries={};
   register={
 
   }

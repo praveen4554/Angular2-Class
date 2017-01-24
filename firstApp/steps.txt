@@ -217,6 +217,98 @@ http calls we use the observable-->
 7. i can call the method by using the promise and promise will return my result
 
 
+date of birth 20-12-23t 00:12:2015 PST
+
+
+pipes lower case to upper caser date format currency 
+
+
+for generating custom pipes
+
+1. ng g pipe pipename
+
+2. i wcheck in my main file i.e app.module it is added or not if it is not added i'm importing and adding in declaration section
+
+3. i'm applying my filter in html and i'm returning the data in pipes
+
+
+
+
+
+parent and child 
+
+input and output
+
+@input-- parent to child
+
+@output -- child to parent 
+
+
+@Input is used to communicate from parent to child;
+
+In your child compoent we are importing Input 
+
+1. User component im Input it isn angular/core
+   import { Component, OnInit, Input } from '@angular/core';
+
+2. i need to create property for communicating 
+   @Input PropertyName:type;
+   @Input pageName:String;// property name is page name
+3. i can display the page name in html {{pageName}} in my child html
+
+4. i need to import my child component 
+  import {compnentName} from path;
+5. heading="Users";// for passing the value from parent to child
+
+6. in my html i'm rendered my child componet using selector
+  <app-user [pageName]="heading"></app-user>
+
+
+  child to parent
+
+  w need send a event the child will notify the parent 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

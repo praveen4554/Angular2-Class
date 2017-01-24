@@ -13,6 +13,10 @@ import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {LookupService} from './services/lookup.service';
+import { UserComponent } from './user/user.component';
+import { PhoneformaterPipe } from './phoneformater.pipe';
+import { PhonePipe } from './phone.pipe';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import {LookupService} from './services/lookup.service';
     HomeComponent,
     ProductsComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent,
+    PhoneformaterPipe,
+    PhonePipe,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
