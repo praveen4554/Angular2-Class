@@ -20,4 +20,7 @@ export class UserComponent implements OnInit {
     console.log(user);
     this.item=user;
   }
+  getdatafromChild(event){
+    console.log(event);
+  }
 }

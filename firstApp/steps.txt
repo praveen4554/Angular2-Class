@@ -270,6 +270,113 @@ In your child compoent we are importing Input
 
 
 
+suppose if i have 10 components 
+
+i would like to communicate  1 to 2nd
+
+8 components 
+
+if i'm not importing the child componet
+
+
+if the child compoent generates event 
+
+the parent should listen the event 
+
+ANgular2 is not impleting the feature of child component my 10 components 
+
+1 to 10 compoennts the first component 1 to 2 
+
+1 is my parent 
+2 is my child
+
+
+suppose if my child generates an event to whom to parent 
+
+if i'm not impoting the 9 components should listen the event and verify in the 
+class is der any function for the event 
+
+for child to parent @Output 
+
+  events child generates events to parents
+
+  event.emit
+  event.next
+
+
+  we should to implement eventemitter for communication between child to parent
+
+
+  parent--child -- @Input property i can communicate
+  child--parent --
+
+
+  1. in my child component i need to import 2 things
+     1.Output
+     2.eventemitter
+
+  2. registering a property with event emiter in child
+     @Output() updateDetails:eventemitter<any>=new eventemitter<any>()
+
+  3. we are generating events in child
+    this.updateDetails.emit("msg");
+
+    in parent
+   4. in my html i should implement an event like
+      (updateDetails)="update($event)"
+
+  4. in ts file i am impleting my function 
+
+      update(event){
+        
+      }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
